@@ -3,6 +3,7 @@ import { ADVENTAGES } from "../config/site";
 import { Goal, Laptop, Rocket, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AdventagesCard from "@/components/cards/adventages-card";
+import { DialogWithForm } from "@/components/dialog-with-form/dialog-with-form";
 
 export default function Home() {
   return (
@@ -78,7 +79,12 @@ export default function Home() {
               de votre enfant. Contactez-moi dès maintenant pour démarrer cette
               transformation.
             </span>
-            <Button>Réserver une séance gratuite</Button>
+            <DialogWithForm
+              dialogTitle="Réserver une séance gratuite"
+              dialogDescription="Profitez d'une séance gratuite d'une heure pour découvrir comment ça marche. "
+            >
+              <Button>Réserver une séance gratuite</Button>
+            </DialogWithForm>
           </div>
         </div>
       </div>

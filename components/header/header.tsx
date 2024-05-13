@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { Button } from "../ui/button";
+import { DialogWithForm } from "../dialog-with-form/dialog-with-form";
 
 export default function Header() {
   return (
@@ -20,7 +21,12 @@ export default function Header() {
         </div>
       </div>
       <div className="flex flex-row space-x-2">
-        <Button>Réserver une séance gratuite</Button>
+        <DialogWithForm
+          dialogTitle="Réserver une séance gratuite"
+          dialogDescription="Profitez d'une séance gratuite d'une heure pour découvrir comment ça marche. "
+        >
+          <Button>Réserver une séance gratuite</Button>
+        </DialogWithForm>
       </div>
     </header>
   );
