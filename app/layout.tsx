@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme/theme-provider";
 import MaxWidthWrapper from "@/components/max-width-wrapper/max-width-wrapper";
 import Footer from "@/components/footer/footer";
 
@@ -24,16 +23,14 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={poppins.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <main className="min-h-screen flex flex-col items-center">
-            <MaxWidthWrapper>
-              <div className="flex-1 w-full flex flex-col gap-8 items-center">
-                {children}
-                <Footer />
-              </div>
-            </MaxWidthWrapper>
-          </main>
-        </ThemeProvider>
+        <main className="min-h-screen flex flex-col items-center">
+          <MaxWidthWrapper>
+            <div className="flex-1 w-full flex flex-col gap-8 items-center">
+              {children}
+              <Footer />
+            </div>
+          </MaxWidthWrapper>
+        </main>
       </body>
     </html>
   );
