@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import MaxWidthWrapper from "@/components/max-width-wrapper/max-width-wrapper";
 import Footer from "@/components/footer/footer";
+import { Toaster } from "sonner";
 
 const poppins = Space_Grotesk({ weight: "400", subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={poppins.className}>
+        <Toaster position="top-center" />
         <main className="min-h-screen flex flex-col items-center">
           <MaxWidthWrapper>
             <div className="flex-1 w-full flex flex-col gap-8 items-center">
