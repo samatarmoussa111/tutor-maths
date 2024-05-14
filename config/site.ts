@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 export const siteConfig = {
-  name: "Samatar Barkadleh",
+  name: "Samatar Moussa",
   title: "Prof de Mathématiques ",
   about_me: `Diplômé d'un Master 2 en mathématiques fondamentales à
               l'Université de Besançon, j'ai enseigné les

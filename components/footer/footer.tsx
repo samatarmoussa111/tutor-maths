@@ -9,7 +9,7 @@ const Footer = () => {
           target="_black"
           className="underline hover:text-primary transition-all duration-300"
         >
-          {`Samatar Barkadleh - Prof de Mathématiques`}
+          {`Samatar Moussa - Prof de Mathématiques`}
         </a>
       </span>
     </div>
